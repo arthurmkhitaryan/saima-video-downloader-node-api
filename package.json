@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arthur mkhitaryan",
+  "license": "ISC",
+  "dependencies": {
+    "content-disposition": "^0.5.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-recaptcha": "^3.6.8",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "ytdl-core": "^4.11.4"
+  }
+}
