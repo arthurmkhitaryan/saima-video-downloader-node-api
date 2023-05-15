@@ -1,12 +1,12 @@
-import express from 'express';
-import ytdl from 'ytdl-core';
-import cors from 'cors';
-import contentDisposition from 'content-disposition';
+const express = require('express');
+const ytdl = require('ytdl-core');
+const cors = require('cors');
+const contentDisposition = require('content-disposition');
 
 //puppeteer
-import puppeteer from 'puppeteer-extra';
-import StealthPlugin from 'puppeteer-extra-plugin-stealth';
-import RecaptchaPlugin from 'puppeteer-extra-plugin-recaptcha';
+const puppeteer = require('puppeteer-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+const RecaptchaPlugin = require('puppeteer-extra-plugin-recaptcha');
 puppeteer.use(StealthPlugin())
 puppeteer.use(
   RecaptchaPlugin({
