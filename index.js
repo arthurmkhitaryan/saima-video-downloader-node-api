@@ -26,6 +26,7 @@ app.use(cors());
 
 app.post('/api/download-youtube', async (req, res) => {
   try {
+    res.set('Access-Control-Allow-Origin', '*');
     const { url } = req.body;
     const videoInfo = await ytdl.getInfo(url);
 
@@ -46,6 +47,7 @@ app.post('/api/download-youtube', async (req, res) => {
 
 app.post('/api/download-coursera', async (req, res) => {
   try {
+    res.set('Access-Control-Allow-Origin', '*');
     const { url } = req.body;
 
     const browser = await puppeteer.launch({
