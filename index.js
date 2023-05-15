@@ -26,7 +26,7 @@ app.use(cors());
 
 app.post('/api/download-youtube', async (req, res) => {
   try {
-    res.set('Access-Control-Allow-Origin', '*');
+    res.set('Access-Control-Allow-Origin', 'https://saima-video-downloader-316ac.web.app/');
     const { url } = req.body;
     const videoInfo = await ytdl.getInfo(url);
 
@@ -47,7 +47,7 @@ app.post('/api/download-youtube', async (req, res) => {
 
 app.post('/api/download-coursera', async (req, res) => {
   try {
-    res.set('Access-Control-Allow-Origin', '*');
+    res.set('Access-Control-Allow-Origin', 'https://saima-video-downloader-316ac.web.app/');
     const { url } = req.body;
 
     const browser = await puppeteer.launch({
